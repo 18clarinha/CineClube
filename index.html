@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="en">
+<!-- Tag raiz do documento, com atributo de idioma definido para inglês -->
+
+<head>
+    <!-- Cabeçalho do documento - contém metadados e links para recursos externos -->
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para responsividade em dispositivos móveis -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para o arquivo CSS externo -->
+    <script src="main.js"></script>
+    <!-- Link para o arquivo JavaScript externo -->
+    <title>CineClub</title>
+    <!-- Título do documento (aparece na aba do navegador) -->
+</head>
+
+<body>
+    <!-- Corpo do documento - contém o conteúdo visível da página -->
+    <div class="container_me">Filmes em cartaz</div>
+    <!-- Cabeçalho de nível 1 -->
+    <button onclick="mostraGaleria()">Mostrar</button>
+    <button onclick="escondeGaleria()">Voltar</button>
+    <!-- Botão que chama a função carConteudo() quando clicado -->
+   <div id="gallery" class="gallery-container">
+        <img src="img/1.jpg" alt="">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/4.jpeg"alt="">
+        <img src="img/5.jpeg"alt="">
+        <img src="img/6.jpg" alt="">
+        <img src="img/7.jpg].jpg" alt="">
+        <img src="img/8.jpg" alt="">
+        <img src="img/9.jpg" alt="">
+    </div>
+    <div class="entrada">
+        <h1>Se increva para comprar:</h1>
+        <input type="text"placeholder="Nome"class="name"/>
+        <input type="text" placeholder="Email" class="e-mail"/>
+        <input type="int" placeholder="Telefone" class="tel"/>
+        <button class="submit">Inscrever-se</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Classe da galeria */
+.gallery-container {
+    display: none; /* Começa oculto */
+    width: 100%;
+    height: 500px;
+}
+
+/* Quando estiver visível */
+.gallery-container.visible {
+    display: flex; /* Mostra como flex container */
+}
+
+/* Estilização das imagens */
+.gallery-container img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+
+/* Efeito hover */
+.gallery-container img:hover {
+    width: 500px;
+    filter: brightness(100%);
+}
+
+/* Container de texto */
+.container_me {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Container principal com layout flexível */
+.card {
+    display: flex;        /* Ativa o modelo Flexbox */
+    flex-wrap: wrap;      /* Permite quebra de linha dos itens quando necessário */
+    gap: 0.5em;          /* Espaço de 0.5em entre os itens */
+}
+
+/* Estilização dos campos do formulário */
+.card .name ,.card .email ,.card .tel {
+    flex: 1 0 10rem;     /* Configuração flexível dos itens:
+                          - 1: cresce proporcionalmente
+                          - 0: não encolhe
+                          - 10rem: largura base de 10 rem */
+    padding: 1em;        /* Espaçamento interno de 1em em todas as direções */
+}
+
+/* Estilização do botão de submit */
+.submit {
+    flex: 1 0 2rem;      /* Configuração flexível diferente:
+                          - mantém crescimento proporcional
+                          - largura base menor de 2rem */
+    background-color: orange;  /* Cor de fundo laranja para destaque */
+}
